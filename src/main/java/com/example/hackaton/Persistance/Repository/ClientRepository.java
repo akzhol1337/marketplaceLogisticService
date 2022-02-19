@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClientRepository extends CrudRepository<Client, Long> {
     Client save(Client save);
+    Client findByName(String name);
 }
